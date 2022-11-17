@@ -1,0 +1,31 @@
+{
+    "compilerOptions": {
+        "target": "es2017",
+        "lib": ["ES5", "ES6", "ES2018"],
+        "module": "commonjs",
+        "strict": false,
+        "rootDir": "./src",
+        "outDir": "./build",
+        "moduleResolution": "node",
+        "typeRoots": ["./node_modules/@types", "./src/@types"],
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strictPropertyInitialization": false,
+        "skipLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@config/*": ["./src/config/*"],
+            "@routes/*": ["./src/routes/*"]
+        },
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["./node_modules"],
+    "ts-node": {
+        "files": true
+    }
+}
